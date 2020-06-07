@@ -10,7 +10,7 @@ class Triangle
     if side1 == side2 && side2 == side3
       :equilateral
     else
-      return :scalene
+      :scalene
     end
   end
   
