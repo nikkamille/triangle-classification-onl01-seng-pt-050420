@@ -23,6 +23,8 @@ class Triangle
         raise PartnerError
       rescue PartnerError => error
           puts error.message
+      end
+    end
   end
   
   class TriangleError < StandardError
@@ -30,7 +32,7 @@ class Triangle
     def message
       "This is not a triangle!"
     end
+    
   end
-  
   
 end
