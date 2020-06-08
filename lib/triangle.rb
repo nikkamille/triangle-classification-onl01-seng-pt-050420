@@ -21,11 +21,15 @@ class Triangle
     if side1 <= 0 || side2 <= 0 || side3 <= 0
       begin 
         raise PartnerError
-      rescue PartnerError
+      rescue PartnerError => error
+          puts error.message
   end
   
   class TriangleError < StandardError
     
+    def message
+      "This is not a triangle!"
+    end
   end
   
   
