@@ -19,7 +19,8 @@ class Triangle
   
   def illegal_triangle
     if side1 <= 0 || side2 <= 0 || side3 <= 0
-      begin
+      begin 
+        raise PartnerError
   end
   
   class TriangleError < StandardError
