@@ -21,6 +21,7 @@ class Triangle
     if side1 <= 0 || side2 <= 0 || side3 <= 0
       begin 
         raise PartnerError
+      rescue PartnerError
   end
   
   class TriangleError < StandardError
