@@ -22,7 +22,7 @@ class Triangle
       begin 
         raise TriangleError
       end
-    else
+    else side1 + side2 <= 0 || side2 <= 0 || side3 <= 0
     end
   end
   
